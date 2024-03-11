@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="index.js"></script>
+    <title>Database Server Application</title>
+</head>
+<body>
+    <h2>Add Data To Database</h2>
+    <form id="addForm">
+        SQL Query: <input type="text" id="addData" name="add_data"><br><br>
+        <input type="button" id="addButton" value="Add">
+    </form>
+
+    <h2>Retrieve Data From Database</h2>
+    <form id="retrieveForm">
+      SQL Query: <input type="text" id="retrieveData" name="retrieve_data"><br><br>
+    <button id="retrieveButton">Retrieve</button>
+    </form>
+
+    <div id="output"></div>
+</body>
+</html>
