@@ -1,12 +1,12 @@
 document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('addButton').addEventListener('click', function () {
         const query = document.getElementById('addData').value;
-        sendData('POST', 'https://urchin-app-lradi.ondigitalocean.app/add', {query: query});
+        sendData('POST', 'https://seahorse-app-2h8zb.ondigitalocean.app/add', {query: query});
     });
 
     document.getElementById('retrieveButton').addEventListener('click', function () {
         const query = document.getElementById('retrieveData').value;
-        sendData('GET', 'https://urchin-app-lradi.ondigitalocean.app/retrieve?query=' + encodeURIComponent(query));
+        sendData('GET', 'https://seahorse-app-2h8zb.ondigitalocean.app/retrieve?query=' + encodeURIComponent(query));
     });
 
     function sendData(method, url, data) {
