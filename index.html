@@ -1,25 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <script src="index.js"></script>
-    <title>Database Server Application</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style.css" rel="stylesheet">
+    <title>Patient Directory</title>
 </head>
 <body>
-    <h2>Add Data To Database</h2>
-    <form id="addForm">
-        SQL Query: <input type="text" id="addData" name="add_data"><br><br>
-        <input type="button" id="addButton" value="Add">
-    </form>
-
-    <h2>Retrieve Data From Database</h2>
-    <form id="retrieveForm">
-      SQL Query: <input type="text" id="retrieveData" name="retrieve_data"><br><br>
-    <button id="retrieveButton">Retrieve</button>
-    </form>
-
-    <div id="output"></div>
+    <script src="./index.js"></script>
+    <script src="./lang/messages/user.js"></script>
+    <div class="container">
+        <div class="dynamic-buttons">
+            <button id="insert">Insert</button>
+        </div>
+        <div class="input-area">
+            <input id="textarea" type="text" placeholder="Enter your query">
+            <button id="submit">Submit</button>
+        </div>
+        <div class="res-panel">
+            <div id="res-area">
+            </div>
+        </div>
+    </div>
 </body>
 </html>
